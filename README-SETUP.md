@@ -39,43 +39,47 @@
 > npm run dev
 
 2.8 在\src\components\新建个vue组件，组件名为radio
-...
+```html
 <template>
-  <el-radio-group v-model="radio2">
-    <el-radio :label="3">备选项</el-radio>
-    <el-radio :label="6">备选项</el-radio>
-    <el-radio :label="9">备选项</el-radio>
-  </el-radio-group>
+  <div>
+    <router-link to="/">回首页</router-link>
+    <el-radio-group v-model="radio2">
+      <el-radio :label="3">备选项</el-radio>
+      <el-radio :label="6">备选项</el-radio>
+      <el-radio :label="9">备选项</el-radio>
+    </el-radio-group>
+  </div>
 </template>
- 
+
 <script>
-  export default {
-    data () {
-      return {
-        radio2: 3
-      };
-    }
+export default {
+  data () {
+    return {
+      radio2: 3
+    };
   }
+};
 </script>
-'''
+
+```
 
 2.9 在\src\router.js中设置路由
-...js
-import radio from '@/components/radio' //引入刚创建的组件
-//设置路由
-{
+```js
+import radio from '@/components/radio'; // 引入刚创建的组件
+// 设置路由
+    {
       path: '/radio',
       name: 'radio',
       component: radio
-}
-...
+    }
+```
 
 2.10 在\src\main.js中加入element-ui的js和css
-...js
-import ElementUI from 'element-ui' //element-ui的全部组件
-import 'element-ui/lib/theme-chalk/index.css'//element-ui的css
-Vue.use(ElementUI) //使用elementUI
-...
+```js
+import ElementUI from 'element-ui'; // element-ui的全部组件
+import 'element-ui/lib/theme-chalk/index.css';// element-ui的css
+Vue.use(ElementUI); // 使用elementUI
+```
 
 
 ## 3. 运行调试命令行
