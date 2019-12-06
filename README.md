@@ -8,3 +8,53 @@
 
 1.3. http://www.axios-js.com/zh-cn/docs/index.html
 > Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。
+
+## 2. 前端环境搭建
+2.1 http://nodejs.cn/
+> 安装NODEJS
+
+2.2 淘宝镜像cnpm安装
+> `npm install -g cnpm --registry=https://registry.npm.taobao.org`
+
+2.3 webpack 全局安装
+> `cnpm install -g webpack`
+
+2.4 vue脚手架全局安装 -- 用于生成vue模板
+> `cnpm install -g vue-cli`
+
+2.5 使用脚手架构建vue项目 -- 一路回车就行了
+> `vue init webpack`
+
+
+
+
+# html
+
+> A Vue.js project
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
