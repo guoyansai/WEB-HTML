@@ -19,7 +19,12 @@
 > `cnpm : 无法加载文件 C:\Users\hp\AppData\Roaming\npm\cnpm.ps1` 解决方法:1.以管理员身份运行power shell；2.输入set-ExecutionPolicy RemoteSigned；3.然后输入A，回车，问题解决。
 
 2.3 webpack 全局安装
-> `cnpm install -g webpack`
+> `cnpm install -g webpack`  
+
+> `browserify` –全功能的Browserify + vueify，包括热加载，静态检测，单元测试。  
+> `browserify-simple` –一个简易的Browserify + vueify，以便于快速开始。  
+> `webpack` –全功能的Webpack + vueify，包括热加载，静态检测，单元测试。  
+> `webpack-simple` –一个简易的Webpack + vueify，以便于快速开始。  
 
 2.4 vue脚手架全局安装 -- 用于生成vue模板
 > `cnpm install -g vue-cli`
@@ -81,6 +86,32 @@ import 'element-ui/lib/theme-chalk/index.css';// element-ui的css
 Vue.use(ElementUI); // 使用elementUI
 ```
 
+2.11 安装axios:
+> `cnpm install --save axios vue-axios`  
+* 将下面代码加入入口文件:   
+```js
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios)
+```
+> 按照这个顺序分别引入这三个文件： vue, axios and vue-axios  
+
+* 你可以按照以下方式使用:  
+```js
+Vue.axios.get(api).then((response) => {
+  console.log(response.data)
+})
+
+this.axios.get(api).then((response) => {
+  console.log(response.data)
+})
+
+this.$http.get(api).then((response) => {
+  console.log(response.data)
+})
+```
 
 ## 3. 运行调试命令行
 # html

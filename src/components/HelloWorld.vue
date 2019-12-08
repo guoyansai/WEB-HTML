@@ -84,7 +84,7 @@
           to="/radio/"
         >
           test router
-        </router-link>
+        </router-link><router-link to="/test/">测试页</router-link>
       </li>
     </ul>
   </div>
