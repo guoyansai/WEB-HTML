@@ -113,6 +113,25 @@ this.$http.get(api).then((response) => {
 })
 ```
 
+2.12 自动格式化eslint规范代码，vscode设置setting.json文件如下
+```json
+{
+    "eslint.autoFixOnSave": true,
+    "eslint.packageManager": "yarn",
+    "eslint.validate": [
+        "javascript", //  用eslint的规则检测js文件
+        {
+            "language": "vue", // 检测vue文件
+            "autoFix": true //  为vue文件开启保存自动修复的功能
+        },
+        {
+            "language": "html",
+            "autoFix": true
+        },
+    ],
+}
+```
+
 ## 3. 运行调试命令行
 # html
 

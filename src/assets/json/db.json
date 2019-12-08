@@ -1,0 +1,571 @@
+{
+    "us": {
+        "tit": "会员",
+        "db": {
+            "id": {
+                "tit": "编号",
+                "des": "系统唯一的数据库ID标识",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "es": {
+                "tit": "上级",
+                "des": "上级会员的账户",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "er": {
+                "tit": "用户",
+                "des": "登录账户",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "ex": {
+                "tit": "密码",
+                "des": "登录密码",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^0-9a-zA-Z_.-#~]/g"
+            },
+            "eb": {
+                "tit": "名字",
+                "des": "账户名称",
+                "type": "text",
+                "maxlength": 200,
+                "regexp": "/[^0-9a-zA-Z_u4E00-u9FA5@.,-_]/g"
+            },
+            "em": {
+                "tit": "邮箱",
+                "des": "电子邮箱",
+                "type": "text",
+                "maxlength": 100,
+                "regexp": "/^[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.-]+([.][a-zA-Z]+){1,2}$/"
+            },
+            "eh": {
+                "tit": "电话",
+                "des": "联系电话",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^0-9.-+]/g"
+            },
+            "et": {
+                "tit": "头像",
+                "des": "展示头像",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "ab": {
+                "tit": "金币",
+                "des": "活动争取",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "aq": {
+                "tit": "金钱",
+                "des": "充值服务",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "as": {
+                "tit": "时间",
+                "des": "注册时间",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^0-9.- :]/g"
+            },
+            "al": {
+                "tit": "更新",
+                "des": "最后更新日期",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "aj": {
+                "tit": "推荐",
+                "des": "推荐到期时间",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "ap": {
+                "tit": "地址",
+                "des": "IP地址",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^0-9.]/g"
+            },
+            "xy": {
+                "tit": "审核",
+                "des": "会员账户状态",
+                "type": "select",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g",
+                "options": {
+                    "1": "普通账户",
+                    "2": "正常账户",
+                    "3": "普通会员",
+                    "4": "认证会员",
+                    "5": "友好会员",
+                    "6": "高级会员",
+                    "7": "特约编辑",
+                    "8": "管理人员",
+                    "9": "首席长官"
+                }
+            }
+        }
+    },
+    "uu": {
+        "tit": "好友",
+        "db": {
+            "id": {
+                "tit": "编号",
+                "des": "系统唯一的数据库ID标识",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "ef": {
+                "tit": "发起",
+                "des": "发起加好友的人",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "af": {
+                "tit": "发读",
+                "des": "发起人未读信息数量",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "ej": {
+                "tit": "接受",
+                "des": "接受加好友的人",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "aj": {
+                "tit": "接读",
+                "des": "接受人未读信息数量",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "as": {
+                "tit": "初见",
+                "des": "初次见面时间",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^0-9.- :]/g"
+            },
+            "al": {
+                "tit": "更新",
+                "des": "最后聊天日期",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "xt": {
+                "tit": "系统",
+                "des": "系统信息",
+                "type": "textarea",
+                "maxlength": 2000,
+                "regexp": "/[&<>\"\\]/g"
+            }
+        }
+    },
+    "un": {
+        "tit": "群聚",
+        "db": {
+            "id": {
+                "tit": "编号",
+                "des": "系统唯一的数据库ID标识",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "es": {
+                "tit": "上级",
+                "des": "群聚的上级",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "er": {
+                "tit": "编码",
+                "des": "群聚的编码",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "eb": {
+                "tit": "名称",
+                "des": "群名称",
+                "type": "text",
+                "maxlength": 200,
+                "regexp": "/[^0-9a-zA-Z_u4E00-u9FA5@.,-_]/g"
+            },
+            "ec": {
+                "tit": "创始",
+                "des": "创始人账户",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "as": {
+                "tit": "时间",
+                "des": "创建时间",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^0-9.- :]/g"
+            },
+            "al": {
+                "tit": "更新",
+                "des": "最后发言日期",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "aj": {
+                "tit": "推荐",
+                "des": "推荐日期",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "xy": {
+                "tit": "状态",
+                "des": "群聚状态",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g",
+                "options": {
+                    "0": "禁用群聚",
+                    "1": "群聚关闭",
+                    "2": "普通群聚",
+                    "3": "专家讨论",
+                    "6": "信息发布",
+                    "7": "开放群聚"
+                }
+            },
+            "xe": {
+                "tit": "成员",
+                "des": "群成员使用逗号",
+                "type": "textarea",
+                "maxlength": 2000,
+                "regexp": "/[&<>\"\\]/g"
+            },
+            "xt": {
+                "tit": "系统",
+                "des": "系统信息",
+                "type": "textarea",
+                "maxlength": 2000,
+                "regexp": "/[&<>\"\\]/g"
+            }
+        }
+    },
+    "ux": {
+        "tit": "短信",
+        "db": {
+            "id": {
+                "tit": "编号",
+                "des": "系统唯一的数据库ID标识",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "eo": {
+                "tit": "内容",
+                "des": "短信内容",
+                "type": "text",
+                "maxlength": 200,
+                "regexp": "/[^0-9a-zA-Z_u4E00-u9FA5@.,-_]/g"
+            },
+            "ey": {
+                "tit": "类型",
+                "des": "短信类型",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g",
+                "options": {
+                    "0": "短消息",
+                    "1": "邮箱短信",
+                    "2": "戳一下",
+                    "3": "阅后即焚",
+                    "7": "系统消息",
+                    "8": "系统通告"
+                }
+            },
+            "ej": {
+                "tit": "接收",
+                "des": "短信接收人",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "af": {
+                "tit": "发送",
+                "des": "短信发送人",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "as": {
+                "tit": "时间",
+                "des": "发送时间",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^0-9.- :]/g"
+            },
+            "at": {
+                "tit": "阅读",
+                "des": "阅读时间",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^0-9.- :]/g"
+            }
+        }
+    },
+    "uj": {
+        "tit": "",
+        "db": {
+            "id": {
+                "tit": "编号",
+                "des": "系统唯一的数据库ID标识",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "ey": {
+                "tit": "类型",
+                "des": "记录类型",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g",
+                "options": {
+                    "0": "本站收藏",
+                    "1": "外站收藏",
+                    "2": "我的微博",
+                    "3": "匿名发布",
+                    "6": "备忘记事"
+                }
+            },
+            "er": {
+                "tit": "用户",
+                "des": "用户账户",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "eo": {
+                "tit": "信息",
+                "des": "记录信息",
+                "type": "text",
+                "maxlength": 200,
+                "regexp": "/[^0-9a-zA-Z_u4E00-u9FA5@.,-_]/g"
+            },
+            "as": {
+                "tit": "时间",
+                "des": "记录时间",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^0-9.- :]/g"
+            }
+        }
+    },
+    "fl": {
+        "tit": "分类",
+        "db": {
+            "id": {
+                "tit": "编号",
+                "des": "系统唯一的数据库ID标识",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "en": {
+                "tit": "编码",
+                "des": "分类的编码",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "eb": {
+                "tit": "标题",
+                "des": "分类标题",
+                "type": "text",
+                "maxlength": 100,
+                "regexp": "/[^0-9a-zA-Z_u4E00-u9FA5@.,-_]/g"
+            },
+            "ep": {
+                "tit": "排序",
+                "des": "分类排序",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^0-9-]/g"
+            },
+            "xy": {
+                "tit": "状态",
+                "des": "分类状态",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g",
+                "options": {
+                    "0": "☆☆☆☆☆",
+                    "1": "★☆☆☆☆",
+                    "2": "★★☆☆☆",
+                    "3": "★★★☆☆",
+                    "4": "★★★★☆",
+                    "5": "★★★★★"
+                }
+            }
+        }
+    },
+    "ai": {
+        "tit": "内容",
+        "db": {
+            "id": {
+                "tit": "编号",
+                "des": "系统唯一的数据库ID标识",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "en": {
+                "tit": "编码",
+                "des": "内容的编码",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "eb": {
+                "tit": "标题",
+                "des": "内容的标题",
+                "type": "text",
+                "maxlength": 200,
+                "regexp": "/[^0-9a-zA-Z_u4E00-u9FA5@.,-_]/g"
+            },
+            "ef": {
+                "tit": "分类",
+                "des": "分类的编码",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "ey": {
+                "tit": "类型",
+                "des": "内容类型",
+                "type": "number",
+                "maxlength": 20,
+                "regexp":  "/[^0-9]/g",
+                "options": {
+                    "0": "文章",
+                    "1": "图片",
+                    "2": "下载"
+                }
+            },
+            "er": {
+                "tit": "会员",
+                "des": "发布的会员账号",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^a-zA-Z0-9]/g"
+            },
+            "ez": {
+                "tit": "作者",
+                "des": "发布人名称",
+                "type": "text",
+                "maxlength": 50,
+                "regexp": "/[^0-9a-zA-Z_u4E00-u9FA5@.,-_]/g"
+            },
+            "ed": {
+                "tit": "道具",
+                "des": "显示道具",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g",
+                "options": {
+                    "0": "无道具",
+                    "1": "下划线",
+                    "2": "加粗体",
+                    "3": "倾斜体",
+                    "4": "红色字",
+                    "5": "蓝色字",
+                    "6": "绿色字",
+                    "7": "黄背景"
+                }
+            },
+            "eu": {
+                "tit": "封面",
+                "des": "封面图片",
+                "type": "text",
+                "maxlength": 200,
+                "regexp": "/[^a-zA-Z0-9//-_.]/g"
+            },
+            "eo": {
+                "tit": "内容",
+                "des": "发布的内容",
+                "type": "textarea",
+                "maxlength": 2000,
+                "regexp": "/[&<>\"\\]/g"
+            },
+            "as": {
+                "tit": "时间",
+                "des": "发布时间",
+                "type": "text",
+                "maxlength": 20,
+                "regexp": "/[^0-9.- :]/g"
+            },
+            "al": {
+                "tit": "更新",
+                "des": "更新日期",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "ah": {
+                "tit": "浏览",
+                "des": "浏览这个内容的人数",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "ax": {
+                "tit": "喜欢",
+                "des": "喜欢这个内容的人数",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "ay": {
+                "tit": "讨厌",
+                "des": "不喜欢这个内容的人数",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g"
+            },
+            "xy": {
+                "tit": "状态",
+                "des": "内容状态",
+                "type": "number",
+                "maxlength": 20,
+                "regexp": "/[^0-9]/g",
+                "options": {
+                    "0": "☆☆☆☆☆",
+                    "1": "★☆☆☆☆",
+                    "2": "★★☆☆☆",
+                    "3": "★★★☆☆",
+                    "4": "★★★★☆",
+                    "5": "★★★★★"
+                }
+            }
+        }
+    }
+}
