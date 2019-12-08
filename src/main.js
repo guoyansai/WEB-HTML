@@ -9,8 +9,9 @@ import 'element-ui/lib/theme-chalk/index.css';// element-ui的css
 
 import axios from 'axios';
 import VueAxios from 'vue-axios';
-
-Vue.use(ElementUI, VueAxios, axios);
+Vue.use(ElementUI);
+Vue.use(VueAxios, axios);
+Vue.prototype.$axios = axios;
 
 Vue.config.productionTip = false;
 

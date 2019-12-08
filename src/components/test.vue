@@ -1,5 +1,7 @@
 <template>
   <div>
+    <router-link to="/">回首页</router-link>
+    <router-link to="/radio">测试页</router-link>
     <el-dialog :title="formadd?'添加信息':'编辑信息'+formdata.uj_id" :visible.sync="formshow">
       <el-form label-width="80px">
         <el-row>
@@ -121,8 +123,8 @@
 </template>
 
 <script>
+
 export default {
-  name: 'test',
   data () {
     return {
       ujeyarr: [
@@ -151,7 +153,7 @@ export default {
       formedit: false,
       formadmin: false,
       formdel: false,
-      urlstart: 'http://localhost:88/api/',
+      urlstart: 'http://localhost:87/',
       dataname: 'uj',
       formdata: {},
       formid: 6,
